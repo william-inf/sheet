@@ -1,0 +1,27 @@
+body {
+  font-family: 'Khula', sans-serif;
+  font-weight: 400;
+  color: $gray-900;
+  font-size: 1rem;
+}
+
+.grid-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 7rem 2fr;
+  grid-template-rows: 1.5fr;
+  grid-template-areas: "side-nav main";
+}
+  
+.side-nav { 
+  grid-area: side-nav;
+  background-color: $charcoal;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+  
+.main { 
+  grid-area: main; 
+}
