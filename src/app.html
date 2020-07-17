@@ -1,7 +1,11 @@
 <template>
   <require from="./app.scss"></require>
-  <div class="grid-container">
-    <div class="side-nav"></div>
-    <div class="main">Here</div>
+  <div class="grid-container ${showFullMenu ? 'large-menu' : ''}">
+    <div class="top-nav">
+      <div class="link-item">
+        Home
+      </div>
+    </div>
+    <div class="main grid">Here</div>
   </div>
 </template>

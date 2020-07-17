@@ -1,7 +1,9 @@
 body {
   font-family: 'Khula', sans-serif;
   font-weight: 400;
-  color: $gray-900;
+  color: $gray-200;
+  background-color: $gray-900;
+  background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
   font-size: 1rem;
 }
 
@@ -10,18 +12,39 @@ body {
   height: 100vh;
 
   display: grid;
-  grid-template-columns: 7rem 2fr;
-  grid-template-rows: 1.5fr;
-  grid-template-areas: "side-nav main";
+  grid-template-rows: 3rem 2fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "top-nav" "main";
+
+  transition: all 250ms;
 }
-  
-.side-nav { 
-  grid-area: side-nav;
+
+.top-nav { 
+  grid-area: top-nav;
   background-color: $charcoal;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  .link-item {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 }
   
 .main { 
-  grid-area: main; 
+  grid-area: main;
+  padding: 1rem;
+}
+
+.grid {
+  background-image:
+    repeating-linear-gradient(darken($gray-800, 5%) 0 1px, transparent 1px 100%),
+    repeating-linear-gradient(90deg, darken($gray-800, 5%) 0 1px, transparent 1px 100%);
+  background-size: 10px 10px;
+
 }
