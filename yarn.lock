@@ -1631,6 +1631,15 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
+aurelia-animator-css@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/aurelia-animator-css/-/aurelia-animator-css-1.0.4.tgz#8336ab84f9a8bf60a4536e99145e73a80c0f0dac"
+  integrity sha1-gzarhPmov2CkU26ZFF5zqAwPDaw=
+  dependencies:
+    aurelia-metadata "^1.0.0"
+    aurelia-pal "^1.0.0"
+    aurelia-templating "^1.0.0"
+
 aurelia-binding@^2.0.0:
   version "2.5.4"
   resolved "https://registry.yarnpkg.com/aurelia-binding/-/aurelia-binding-2.5.4.tgz#c1c9221dd351bbf749df5e71aedc29b993a9ada0"
@@ -1685,6 +1694,13 @@ aurelia-event-aggregator@^1.0.0:
   integrity sha512-8fSWNCgh3gIsq/MgE+njVnUlYS05D6acyC8aJECekNWYecdBz46ckEblywP1ZNHLIt3u/Ws0oMqiOp1Jjw+0hw==
   dependencies:
     aurelia-logging "^1.0.0"
+
+aurelia-fetch-client@^1.8.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/aurelia-fetch-client/-/aurelia-fetch-client-1.8.2.tgz#d1252500d06e8d5bccc3891a702c0c3184436d20"
+  integrity sha512-HEQAi4CTEByesIBDqfn/YAF7ZwVQCn28npT2HknAr03orYr57klwY6y+oT3Kc1mEVe+9PU5gk2tzJiaqPXK5hw==
+  dependencies:
+    aurelia-pal "^1.3.0"
 
 aurelia-framework@^1.0.0, aurelia-framework@^1.3.0:
   version "1.3.1"
@@ -2060,13 +2076,13 @@ bcx-expression-evaluator@^1.2.1:
   resolved "https://registry.yarnpkg.com/bcx-expression-evaluator/-/bcx-expression-evaluator-1.2.1.tgz#11ef1155f26fb4d1b22714aa2cb8b0b9c97cfe8b"
   integrity sha512-ua97QzR4M3ykBTs8IAk1QcfXVCj4tXhTOOmYx9GP1Q0ZM7XuJaCRrQoIobHDMh9w4Yy1U6CLUfiOY+d1GGpALw==
 
-bcx-validation@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/bcx-validation/-/bcx-validation-1.3.2.tgz#dfd64b859b736e2ebc80116b514c77e772337318"
-  integrity sha512-imICJ5P9iBCXGPFSc+Q1ibwVA0Qm34U0KW+ze6AHJ2iA8F236pNFpclHRX1sGAkhwjZ0ykPX1gnkYgeWPklU5Q==
+bcx-validation@^1.1.1:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/bcx-validation/-/bcx-validation-1.3.3.tgz#bcfc5255db972d65d50a308393778d3902bc449f"
+  integrity sha512-VNNZx9XGqZqKVfLVVSVyc9Cu/MPWwlP/9b/g+hFDg+iQi2dpu8inRomTYt+ssHSak7zjLlsQJqeIrAhkfS/rEQ==
   dependencies:
     bcx-expression-evaluator "^1.2.1"
-    lodash "^4.17.15"
+    lodash "^4.17.20"
 
 better-assert@~1.0.0:
   version "1.0.2"
@@ -2107,10 +2123,10 @@ bn.js@^5.1.1:
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.1.2.tgz#c9686902d3c9a27729f43ab10f9d79c2004da7b0"
   integrity sha512-40rZaf3bUNKTVYu9sIeeEGOg7g14Yvnj9kH7b50EiwX0Q7A6umbvfI5tvHaOERH0XigqKkfLkFQxzb4e6CIXnA==
 
-bootstrap@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.5.0.tgz#97d9dbcb5a8972f8722c9962483543b907d9b9ec"
-  integrity sha512-Z93QoXvodoVslA+PWNdk23Hze4RBYIkpb5h8I2HY2Tu2h7A0LpAgLcyrhrSUyo2/Oxm2l1fRZPs1e5hnxnliXA==
+bootstrap@^4.4.1:
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.5.3.tgz#c6a72b355aaf323920be800246a6e4ef30997fe6"
+  integrity sha512-o9ppKQioXGqhw8Z7mah6KdTYpNQY//tipnkxppWhPbiSWdD+1raYsnhwEZjkTHYbGee4cVQ0Rx65EhOY/HNLcQ==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -4748,9 +4764,9 @@ inherits@2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@^1.3.4:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
+  integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
 inquirer@^0.12.0:
   version "0.12.0"
@@ -5573,6 +5589,11 @@ jest@^26.0.1:
     import-local "^3.0.2"
     jest-cli "^26.1.0"
 
+jquery@^3.4.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
+  integrity sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -5907,6 +5928,11 @@ lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.1
   version "4.17.19"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+
+lodash@^4.17.20:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 loose-envify@^1.0.0:
   version "1.4.0"
@@ -6765,6 +6791,11 @@ pn@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
   integrity sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
+
+popper.js@^1.16.0:
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
+  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
